@@ -1,29 +1,54 @@
-# supply-chain-optimization
-Senior, Data Analyst Walmart Portfolio
-#Supply Chain Simulation Project
+# 📦 Supply Chain Simulation (IoT-Inspired)
 
-##Overview
-This project simulates a supply chain process for a retail company (e.g., Walmart) to generate synthetic data for analysis. The simulation includes various stages of the supply chain, such as receiving, storage, picking, and packing. The generated dataset can be used for training machine learning models, analyzing bottlenecks, and optimizing operations.
+## 📖 Overview
+This project simulates a real-time supply chain tracking system inspired by large-scale logistics environments like Walmart's ambient supply chain.
 
-##Features 
-- Simulates multiple items moving through different stages of the supply chain.
-- Generates timestamps and calculates time spent at each stage.
-- Flags potential delays based on predefined thresholds.
-- Saves the generated dataset in CSV format for further analysis.
+The goal is to model how items move through a warehouse and identify inefficiencies using data.
 
-##Tools Used 
-- Python
-- Pandas
-- NumPy
-- Random
-- Datetime
+---
 
-##Key Insights
-- The simulation can help identify bottlenecks in the supply chain process.
-- The generated dataset can be used to train predictive models for demand forecasting and inventory management.
-- Analyzing the time spent at each stage can lead to process improvements and cost savings.
+## ⚙️ Features
+- Simulates item movement across 5 warehouse stages:
+  - Receiving → Storage → Picking → Packing → Shipping
+- Generates timestamped event-level data
+- Introduces random delays to mimic real-world bottlenecks
+- Creates derived metrics for analysis
 
-##Future Improvements
-- Incorporate more complex scenarios, such as multiple warehouses and transportation stages.
-- Add more detailed item attributes (e.g., weight, dimensions) for a more realistic simulation.
-- Implement machine learning models to predict delays and optimize the supply chain process.	
+---
+
+## 🧠 Key Analysis
+- Identified bottlenecks using average dwell time
+- Flagged delayed items based on thresholds
+- Analyzed stage-to-stage transition times
+
+---
+
+## 🛠 Tech Stack
+- Python (pandas, datetime, random)
+- CSV data output
+- Ready for visualization in Tableau/Power BI
+
+---
+
+## 📊 Example Use Cases
+- Warehouse efficiency optimization
+- Inventory flow tracking
+- Delay detection and alert systems
+
+---
+
+## 🚀 Future Improvements
+- Real-time streaming simulation
+- Predictive modeling for delays
+- Interactive dashboard
+
+---
+
+## 📁 Files
+- `simulation.py` → main dataset generator
+- `supply_chain_simulation.csv` → generated dataset
+
+---
+
+## 💡 Business Impact
+Reducing dwell time and identifying bottlenecks can significantly improve inventory flow, reduce stockouts, and increase operational efficiency.
